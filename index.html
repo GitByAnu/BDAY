@@ -600,16 +600,6 @@ body {
 }
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
-    #gallery .gallery-heading, {
-  transform: translateY(-80px);
-  margin-top: -40px;
-}
-
-#gallery .filmroll-heading,{
-  transform: translateY(-80px);
-  margin-top: -40px;
-}
-
 /* Polaroid Wall */
 .polaroid-wall {
   display: flex;
@@ -646,6 +636,19 @@ body {
 
 .polaroid:hover {
   transform: rotate(0deg) scale(1.05);
+}
+.gallery-heading {
+  font-family: 'Pacifico', cursive; /* or any handwritten/cute font */
+  font-size: 2.2rem;
+  color: #d1b3ff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 8px rgba(169, 108, 255, 0.4);
+  animation: popIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-80px);
+  margin-top: -40px;
+}
 }
 
 
@@ -724,7 +727,19 @@ body {
   box-shadow: 0 0 12px rgba(174, 122, 212, 0.4);
 }
 
-
+.filmroll-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #e0bbff;
+  text-align: center;
+  margin: 60px 0 30px;
+  text-shadow: 0 2px 6px rgba(164, 94, 255, 0.3);
+  animation: floatPop 1.2s ease forwards;
+  opacity: 0;
+  transform: translateY(-80px);
+  margin-top: -40px;
+}
+}
 /* Lightbox modal */
 .modal {
   display: none;
@@ -760,17 +775,7 @@ body {
   color: white;
   cursor: pointer;
 }
-.gallery-heading {
-  font-family: 'Pacifico', cursive; /* or any handwritten/cute font */
-  font-size: 2.2rem;
-  color: #d1b3ff;
-  text-align: center;
-  margin-bottom: 30px;
-  text-shadow: 0 2px 8px rgba(169, 108, 255, 0.4);
-  animation: popIn 1s ease forwards;
-  opacity: 0;
-}
-
+    
 @keyframes popIn {
   0% {
     transform: scale(0.8);
@@ -780,16 +785,6 @@ body {
     transform: scale(1);
     opacity: 1;
   }
-}
-.filmroll-heading {
-  font-family: 'Pacifico', cursive;
-  font-size: 2rem;
-  color: #e0bbff;
-  text-align: center;
-  margin: 60px 0 30px;
-  text-shadow: 0 2px 6px rgba(164, 94, 255, 0.3);
-  animation: floatPop 1.2s ease forwards;
-  opacity: 0;
 }
 
 @keyframes floatPop {
